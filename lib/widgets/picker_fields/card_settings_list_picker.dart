@@ -73,7 +73,6 @@ class _CardSettingsListPickerState extends FormFieldState<String> {
       },
     ).then((value) {
       if (value != null) {
-        didChange(value);
         if (widget.onChanged != null) widget.onChanged(value);
       }
     });
