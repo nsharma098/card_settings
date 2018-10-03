@@ -30,6 +30,7 @@ class CardSettingsListPicker extends FormField<String> {
               final _CardSettingsListPickerState state = field;
               return GestureDetector(
                 onTap: () {
+                   FocusScope.of(field.context).requestFocus(new FocusNode());
                   state._showDialog(label, options);
                 },
                 child: CardSettingsField(
