@@ -8,7 +8,7 @@ class CardSettingsHeader extends StatelessWidget {
   CardSettingsHeader({
     this.label: 'Label',
     this.labelAlign: TextAlign.left,
-    this.height: 44.0,
+    this.height: 34.0,
     this.color,
   });
 
@@ -23,7 +23,7 @@ class CardSettingsHeader extends StatelessWidget {
       margin: EdgeInsets.all(0.0),
       decoration: BoxDecoration(color: color ?? Theme.of(context).accentColor),
       height: height,
-      padding: EdgeInsets.only(left: 14.0, top: 8.0, right: 14.0, bottom: 8.0),
+      padding: EdgeInsets.only(left: 14.0, top: 4.0, right: 14.0, bottom: 4.0),
       child: Row(
         children: <Widget>[
           Expanded(
@@ -31,6 +31,7 @@ class CardSettingsHeader extends StatelessWidget {
               label,
               style: Theme.of(context).primaryTextTheme.title,
               textAlign: labelAlign,
+              textScaleFactor: 0.80,
             ),
           ),
         ],
