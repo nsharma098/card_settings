@@ -75,7 +75,7 @@ class CardSettingsText extends FormField<String> {
                 style: style,
                 decoration: InputDecoration(
                   contentPadding: EdgeInsets.all(0.0),
-                  border: InputBorder.none,
+                  border: UnderlineInputBorder(),
                   errorText: field.errorText,
                   prefixText: prefixText,
                   hintText: hintText,
