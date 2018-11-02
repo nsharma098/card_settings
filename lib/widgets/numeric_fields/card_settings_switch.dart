@@ -9,6 +9,7 @@ class CardSettingsSwitch extends FormField<bool> {
   CardSettingsSwitch({
     Key key,
     String label: 'Label',
+    double labelWidth= 120.0,
     TextAlign labelAlign,
     TextAlign contentAlign,
     Icon icon,
@@ -31,6 +32,7 @@ class CardSettingsSwitch extends FormField<bool> {
               final _CardSettingsSwitchState state = field;
               return CardSettingsField(
                 label: label,
+                labelWidth: labelWidth,
                 labelAlign: labelAlign,
                 visible: visible,
                 icon: icon,
